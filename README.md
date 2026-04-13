@@ -1,2 +1,6 @@
-# Currency_Convertor
-A Python-based CLI tool for converting a currency to another one. Rates By Exchange Rate API.
+#💱 Currency Converter CLIA streamlined Python command-line tool for real-time currency conversion. This application provides up-to-the-minute exchange rates and specific pair conversions using a secure environment-based configuration.<p align="center"><a href="https://www.exchangerate-api.com">Rates By Exchange Rate API</a></p>✨ FeaturesPair Mode: Direct conversion between two specific currencies for a precise amount.Bulk Rates: View how a base currency compares against all other supported currencies globally.Smart Search: Search the internal currency database by country or currency name to find the correct ISO code.Secure Configuration: Protects your private API credentials using environment variables.🚀 Getting Started1. InstallationClone the repository and navigate to the project folder:git clone [https://github.com/yourusername/currency-converter.git](https://github.com/yourusername/currency-converter.git)
+cd currency-converter
+2. DependenciesInstall the required libraries using pip:pip install -r requirements.txt
+3. API SetupSign up for a free key at ExchangeRate-API.Create a folder named config in the root directory.Create a file named .env inside the config folder.Add your API key to the file:API_KEY=your_actual_key_here
+4. Run the Apppython Currency_Exchanger.py
+🛠 Tech StackPython 3.10+Requests: For seamless API communication.Python-dotenv: For secure management of secret keys.📄 LicenseThis project is open-source and released under the MIT License.Data provided by Exchange Rate API.
