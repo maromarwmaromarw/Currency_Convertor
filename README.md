@@ -1,66 +1,93 @@
-💱 Currency Converter CLI
+This is a clean and functional CLI currency converter. Below is a comprehensive `README.md` that explains how to set it up, how to use the different modes, and the technical requirements.
 
-A streamlined Python command-line tool for real-time currency conversion. This application provides up-to-the-minute exchange rates and specific pair conversions using a secure environment-based configuration.
+-----
 
-<p align="center">
-<a href="https://www.exchangerate-api.com">Rates By Exchange Rate API</a>
-</p>
+# Currency Converter CLI
 
-✨ Features
+A robust Python-based Command Line Interface (CLI) tool for real-time currency conversion and exchange rate tracking. This tool leverages the **ExchangeRate-API** to provide accurate data across 160+ currencies.
 
-Pair Mode: Direct conversion between two specific currencies for a precise amount.
+## 🚀 Features
 
-Bulk Rates: View how a base currency compares against all other supported currencies globally.
+  * **Pair Mode (One-to-One):** Directly convert a specific amount from one currency to another (e.g., 100 USD to EUR).
+  * **Latest Rates (One-to-Many):** Input a base currency and an amount to see its value across all supported global currencies.
+  * **Smart Search:** Search for 3-letter currency codes using country names or currency names (e.g., searching "Japan" returns JPY).
+  * **Comprehensive Database:** Built-in dictionary of over 160 currencies, names, and associated countries.
+  * **Error Handling:** Robust validation for API keys, network connections, and user input.
 
-Smart Search: Search the internal currency database by country or currency name to find the correct ISO code.
+-----
 
-Secure Configuration: Protects your private API credentials using environment variables.
+## 🛠️ Prerequisites
 
-🚀 Getting Started
+  * **Python 3.10+** (The script uses `match/case` statements).
+  * **API Key:** You will need a free API key from [ExchangeRate-API](https://www.exchangerate-api.com/).
 
-1. Installation
+-----
 
-Clone the repository and navigate to the project folder:
+## 📦 Installation
 
-git clone [https://github.com/yourusername/currency-converter.git](https://github.com/yourusername/currency-converter.git)
-cd currency-converter
+1.  **Clone the repository:**
 
+    ```bash
+    git clone https://github.com/yourusername/currency-converter.git
+    cd currency-converter
+    ```
 
-2. Dependencies
+2.  **Install dependencies:**
 
-Install the required libraries using pip:
+    ```bash
+    pip install requests python-dotenv
+    ```
 
-pip install -r requirements.txt
+3.  **Setup Environment Variables:**
 
+      * Create a folder named `config`.
+      * Inside `config`, create a file named `.env`.
+      * Add your API key to the file:
 
-3. API Setup
+    <!-- end list -->
 
-Sign up for a free key at ExchangeRate-API.
+    ```env
+    API_KEY=your_actual_api_key_here
+    ```
 
-Create a folder named config in the root directory.
+-----
 
-Create a file named .env inside the config folder.
+## 🖥️ Usage
 
-Add your API key to the file:
+Run the script using Python:
 
-API_KEY=your_actual_key_here
+```bash
+python main.py
+```
 
+### Menu Options
 
-4. Run the App
+| Option | Description |
+| :--- | :--- |
+| **1. Convert a value** | Performs the conversion based on the current mode. |
+| **2. Change pair mode** | Toggles between **Pair Mode** (specific conversion) and **Standard Mode** (all rates). |
+| **3. Show supported codes** | Prints a full list of all 160+ supported currency codes. |
+| **4. Search a code** | Find a code by typing a country (e.g., "Canada") or name (e.g., "Peso"). |
+| **5. Help** | Displays the help menu. |
+| **6. Exit** | Closes the application. |
 
-python Currency_Exchanger.py
+-----
 
+## 📂 Project Structure
 
-🛠 Tech Stack
+```text
+.
+├── config/
+│   └── .env            # Environment variables (API Key)
+├── main.py             # Main application logic
+└── README.md           # Documentation
+```
 
-Python 3.10+
+## ⚠️ Important Notes
 
-Requests: For seamless API communication.
+  * **API Limits:** Ensure you are aware of the rate limits associated with your ExchangeRate-API tier (the Free tier typically allows 1,500 requests per month).
+  * **Formatting:** In "Latest Rates" mode, the tool automatically calculates the result based on your input amount ($Amount \times Rate$) for every currency in the database.
 
-Python-dotenv: For secure management of secret keys.
+## 📄 License
 
-📄 License
-
-This project is open-source and released under the MIT License.
-
-Data provided by Exchange Rate API.
+This project is open-source and available under the [MIT License](https://www.google.com/search?q=LICENSE).
