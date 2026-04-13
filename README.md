@@ -1,4 +1,4 @@
-This is a clean and functional CLI currency converter. Below is a comprehensive `README.md` that explains how to set it up, how to use the different modes, and the technical requirements.
+This is a clean and functional CLI currency converter. Below is a comprehensive `README.md` that explains how to set it up, how to use the different modes, and the technical requirements. <a href="https://www.exchangerate-api.com">Rates By Exchange Rate API</a>
 
 -----
 
@@ -87,6 +87,7 @@ python main.py
 
   * **API Limits:** Ensure you are aware of the rate limits associated with your ExchangeRate-API tier (the Free tier typically allows 1,500 requests per month).
   * **Formatting:** In "Latest Rates" mode, the tool automatically calculates the result based on your input amount ($Amount \times Rate$) for every currency in the database.
+  * <a href="https://www.exchangerate-api.com">Rates By Exchange Rate API</a>
 
 ## 📄 License
 
