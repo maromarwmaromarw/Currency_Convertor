@@ -40,8 +40,8 @@ A robust Python-based Command Line Interface (CLI) tool for real-time currency c
 
 3.  **Setup Environment Variables:**
 
-      * Create a folder named `config`.
-      * Inside `config`, create a file named `.env`.
+      * Look at the folder named `config`.
+      * Inside `config`, there is an already created file named `.env`.
       * Add your API key to the file:
 
     <!-- end list -->
