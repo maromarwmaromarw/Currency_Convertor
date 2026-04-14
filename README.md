@@ -24,8 +24,8 @@ A robust Python-based Command Line Interface (CLI) tool for real-time currency c
 1.  **Clone the repository:**
 
     ```bash
-    git clone https://github.com/yourusername/currency-converter.git
-    cd currency-converter
+    git clone https://github.com/maromarwmaromarw/Currency_Convertor.git
+    cd Currency_Convertor
     ```
 
 2.  **Install dependencies:**
