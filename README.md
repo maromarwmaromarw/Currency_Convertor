@@ -1,7 +1,3 @@
-This is a clean and functional CLI currency converter. Below is a comprehensive `README.md` that explains how to set it up, how to use the different modes, and the technical requirements. <a href="https://www.exchangerate-api.com">Rates By Exchange Rate API</a>
-
------
-
 # Currency Converter CLI
 
 A robust Python-based Command Line Interface (CLI) tool for real-time currency conversion and exchange rate tracking. This tool leverages the **ExchangeRate-API** to provide accurate data across 160+ currencies.
@@ -40,8 +36,8 @@ A robust Python-based Command Line Interface (CLI) tool for real-time currency c
 
 3.  **Setup Environment Variables:**
 
-      * Look at the folder named `config`.
-      * Inside `config`, there is an already created file named `.env`.
+      * Create a folder named `config`.
+      * Inside `config`, create a file named `.env`.
       * Add your API key to the file:
 
     <!-- end list -->
@@ -85,9 +81,12 @@ python main.py
 
 ## ⚠️ Important Notes
 
-  * **API Limits:** Ensure you are aware of the rate limits associated with your ExchangeRate-API tier (the Free tier typically allows 1,500 requests per month).
+  * **API Limits:** Ensure you are aware of the rate limits associated with your ExchangeRate-API tier. Rate limited IPs receive HTTP code 429 responses and must wait 20 minutes.
   * **Formatting:** In "Latest Rates" mode, the tool automatically calculates the result based on your input amount ($Amount \times Rate$) for every currency in the database.
-  * <a href="https://www.exchangerate-api.com">Rates By Exchange Rate API</a>
+
+## 🤝 Attribution
+
+[Rates By Exchange Rate API](https://www.exchangerate-api.com)
 
 ## 📄 License
 
